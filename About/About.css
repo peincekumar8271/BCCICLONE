@@ -1,0 +1,365 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+header{
+   width: auto;
+   height: 20px;
+   display: flex;
+   /* border: 2px solid red; */
+}
+#ipl_logo{
+   background-image: url(ipl_logo.jpg);
+   height: 30px;
+   width: 50px;
+   background-size: cover;
+   margin-top: 2px;
+   margin-left: 100px;
+
+}
+#wpl_logo{
+   background-image: url(Wpl\ logo.jpg);
+   height: 30px;
+   width: 70px;
+   background-size: cover;
+   margin-top: 0px;
+   margin-left: 20px;
+   margin-left: 20px;
+}
+
+#header_h1{
+   padding-left: 300px;
+   padding-top: 10px;
+   color: blue;
+}
+#handels{
+   display: flex;
+}
+
+#thrades{
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   margin-top: 2px;
+   margin-left: 300px;
+}
+#thrades>img{
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   padding-left: 5px;
+   padding-top: 5px;
+}
+#insta_head{
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   /* margin-top: 2px; */
+   margin-left: 20px;
+   margin-top: 5px;   
+}
+
+#insta_head>img{
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   /* background-color: rgb(57, 52, 52); */
+   color: white;   
+}
+
+#X_head{
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   /* margin-top: 2px; */
+   margin-left: 20px;
+   margin-top: 8px; 
+}
+#X_head>img{
+   border-radius: 50%;
+   height: 25px;
+   width: 25px;
+   /* background-color: rgb(57, 52, 52); */
+   color: white;   
+}
+
+/* Nav bar designing */
+nav{
+   height: 60px;
+   width: auto;
+   background-color: #050b5e;
+   display: flex;
+   text-align: center;
+   justify-content: space-around;
+   position: sticky;
+   top: 0px ;
+}
+
+#nav_content>ul{
+   display: flex;
+   list-style: none;
+   align-items: center;
+   height: 40px;
+   width: 800px;
+   /* border: 2px solid; */
+   justify-content: space-between;
+   
+}
+#nav_content>ul>li{
+   /* height: 40px; */
+   margin-top: 10px;
+   /* width: 130px; */
+   /* border: 2px solid; */
+   text-align: center;
+}
+
+#nav_content>ul>li>a{
+   text-decoration: none;
+   color: white;
+   position: relative;
+ 
+ }
+ #nav_content>ul>li>a:hover{
+ 
+    color: orange;
+ 
+ }
+ 
+ #nav_content>ul>li>a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: red;
+    transform: translateY(23px);
+    left: 0px;
+ }
+ 
+ #nav_content>ul>li>a:hover::after{
+    animation-name:nav_select;
+    animation-duration: 600s;
+    animation-timing-function: linear;
+ }
+ 
+ @keyframes nav_select{
+    0%{
+       width: 0%;
+       opacity: 0;
+       border-radius: 0px;
+    }
+    .4%{
+       width: 100%;
+       opacity: 1;
+       border-radius: 15px;
+    }
+ } 
+ 
+ #curr{
+    /* padding-top: 6px; */
+    padding-bottom: 6px;
+    border-bottom: 5px solid red;
+ }
+ 
+
+
+
+/* About */
+#aboutmain{
+   width: auto;
+   height: auto;
+   padding: 10px 10px;
+   background-color: #e9ecf4;
+}
+
+#aboutcont{
+   width: auto;
+   height: auto;
+   background-color: #ffffff;
+   border-radius: 10px;
+   /* display: flex;
+   justify-content: center;
+   flex-direction: column */
+}
+
+#aboutcont>h1{
+   text-align: center;
+   font-size: 40px;
+   padding-top: 20px;
+   font-style: italic;
+}
+#aboutnav>a{
+   text-decoration: none;
+   color: black;
+   height: 50px;
+   /* width: 100px; */
+   padding: 14px 20px;
+   /* border: 2px solid red; */
+}
+#aboutnav{
+   height:50px;
+   width: 700px;
+   border: 1px solid;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-left: 26%;
+   margin-top: 20px;
+}
+#History{
+   border-bottom: 5px solid red;
+}
+#aboutcont>h2{
+   font-size: 50px;
+   padding: 10px 100px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#aboutcont>h3{
+   font-size: 16px;
+   padding: 12px 150px;
+   font-family: cursive;
+   font-weight:200;
+   color: rgba(0, 0, 0, 0.563);
+}
+
+
+
+
+
+/* pateners */
+#pateners{
+  height: 250px;
+  width: auto;
+  background-color: black;
+  padding-top: 25px;
+}
+
+#pateners_con{
+  height: 200px;
+  width: 95%;
+  margin:auto;
+  border: 2px solid #d2a66c;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+
+}
+#pateners_con>a{
+  text-decoration: none;
+}
+.pateners{
+  color: #d2a66c;
+  width: 170px;
+  font-size: 12px;
+  /* border: 2px solid white; */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.pateners>div{
+  width: 170px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pateners>img{
+  height: 60px;
+  width: auto;
+
+}
+
+
+
+/* Footer*/
+footer{
+  padding-top: 50px;
+   background-color: #050a5c;
+   width: auto;
+   height: 550px;
+   flex-direction: column;
+   /* align-items: flex-end; */
+   display: flex;
+
+
+}
+footer>div{
+   display: flex;
+   justify-content:space-evenly ;
+}
+#upper_footer>div{
+   height: 350px;
+   width: 200px;
+   /* border: 2px solid; */
+}
+#upper_footer>div h2{
+   color: white;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: 18px;
+   /* text-align: center; */
+   font-weight: bolder;
+}
+#upper_footer>div p{
+   color: rgb(131, 122, 199);
+   padding-top: 20px;
+   padding-right: 30px;
+}
+#upper_footer>div>ul{
+   list-style: none;
+}
+#upper_footer>div>ul>li{
+   padding: 5px;
+}
+#upper_footer>div>ul>li>a{
+   text-decoration: none;
+   color: rgb(131, 122, 199);
+}
+#upper_footer>div>ul>li>a:hover{
+   color: orange;
+}
+
+/* Lower footer */
+
+#lower_footer{
+   display: flex;
+   flex-direction: column;
+}
+#lower_footer>div{
+   display: flex;
+}
+
+#lower_footer img{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   background-color: white;
+   margin-right: 10px;
+}
+
+#lower_footer_1{
+   height: 30px;
+   width: auto;
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: center;
+}
+
+#lower_footer_1>span{
+   padding-top: 10px;
+   padding-right: 5px;
+   color: white;
+}
+#lower_footer_2{
+   margin-top: 40px;
+   color: white;
+   display: flex;
+   justify-content: space-around;
+}
+#lower_footer_2 a{
+   color: white;
+   text-decoration: none;
+}
